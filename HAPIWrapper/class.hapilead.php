@@ -43,9 +43,8 @@ class HAPILeads
 	private $APIBaseURL = 'https://api.hubapi.com';
 
 	 /**
-	 * Creates new HubSpot Request instance
+	 * Creates new instance of HAPILeads
 	 *
-	 * @param HubSpotObject: Set to the object type being accessed (currently only supports 'leads')
 	 * 
 	 */
 	function __construct()
