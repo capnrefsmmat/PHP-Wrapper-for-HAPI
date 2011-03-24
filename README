@@ -1,0 +1,5 @@
+This project is a PHP Wrapper for HAPI.  It currently supports the Leads API.
+
+Documentation of HAPI can be found online at http://docs.hubapi.com
+
+Please see example.php for examples of how to use the wrapper.
