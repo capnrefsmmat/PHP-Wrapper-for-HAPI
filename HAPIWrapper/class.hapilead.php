@@ -293,9 +293,9 @@ class HAPILeads
         curl_setopt($ch, CURLOPT_URL, $this->RequestGetURL);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        $this->RequestResponse['Error'] = curl_errno($ch);
-        $this->RequestResponse['ErrorMessage'] = curl_error($ch);
         $output = curl_exec($ch);
+				$this->RequestResponse['Error'] = curl_errno($ch);
+        $this->RequestResponse['ErrorMessage'] = curl_error($ch);
         $decodedoutput = json_decode($output);
         $this->RequestResponse['RecordCount'] = count($decodedoutput);
         $this->RequestResponse['Data'] = $decodedoutput;
